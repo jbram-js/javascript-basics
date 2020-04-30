@@ -42,7 +42,7 @@ describe("either", () => {
 });
 
 describe("none", () => {
-  xit("returns true if neither of the given values are true", () => {
+  it("returns true if neither of the given values are true", () => {
     expect(none(true, true)).toBe(false);
     expect(none(true, false)).toBe(false);
     expect(none(false, true)).toBe(false);
@@ -60,7 +60,7 @@ describe("one", () => {
 });
 
 describe("truthiness", () => {
-  xit("returns the truthiness of the given value", () => {
+  it("returns the truthiness of the given value", () => {
     expect(truthiness("")).toBe(false);
     expect(truthiness("dbbd")).toBe(true);
     expect(truthiness(0)).toBe(false);
@@ -119,7 +119,7 @@ describe("isEven", () => {
 });
 
 describe("isSquare", () => {
-  xit("returns true if the number is a square", () => {
+  it("returns true if the number is a square", () => {
     expect(isSquare(9)).toEqual(true);
     expect(isSquare(5)).toEqual(false);
     expect(isSquare(-4)).toEqual(false);
@@ -128,7 +128,7 @@ describe("isSquare", () => {
 });
 
 describe("startsWith", () => {
-  xit("returns whether the given string starts with the given character", () => {
+  it("returns whether the given string starts with the given character", () => {
     expect(startsWith("a", "aardvark")).toBe(true);
     expect(startsWith("a", "qaardvark")).toBe(false);
     expect(startsWith("a", "Aardvark")).toBe(false);
@@ -136,7 +136,7 @@ describe("startsWith", () => {
 });
 
 describe("containsVowels", () => {
-  xit("returns whether the given string contains vowels", () => {
+  it("returns whether the given string contains vowels", () => {
     expect(containsVowels("cat")).toBe(true);
     expect(containsVowels("DOG")).toBe(true);
     expect(containsVowels("why")).toBe(false);

@@ -11,6 +11,7 @@ const either = (a, b) => {
 };
 
 const none = (a, b) => {
+  return !a && !b;
 };
 
 const one = (a, b) => {
@@ -18,7 +19,7 @@ const one = (a, b) => {
 };
 
 const truthiness = a => {
-  // your code here
+  return !!a;
 };
 
 const isEqual = (a, b) => {
@@ -38,19 +39,19 @@ const isOdd = a => {
 };
 
 const isEven = a => {
-  return a % 2 == 0;
+  return a % 2 === 0;
 };
 
 const isSquare = a => {
-  // your code here
+  return Math.sqrt(a) % 1 === 0;
 };
 
 const startsWith = (char, string) => {
-  // your code here
+  return string.startsWith(char);
 };
 
 const containsVowels = string => {
-  // your code here
+  return !!string.match(/[aeiou]/gi);
 };
 
 const isLowerCase = string => {
